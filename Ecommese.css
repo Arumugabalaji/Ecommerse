@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 253, 160);
+}
+
+.nav {
+  border: 1px solid black;
+  padding: 10px;
+  padding-left: 10px;
+  background-color: rgba(2, 2, 47, 0.984);
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  padding-left: 3%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.box p {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center; /* Center the text inside each box */
+  padding: 2px;
+  margin: 0;
+  color: rgb(249, 251, 251);
+  border: 0px solid black; /* Optional: add a border to each box for clarity */
+  background-color: rgb(57, 8, 8); /* Optional: background color for better contrast */
+}
+
+/* Search and Filter Container */
+.search-filter-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 35px;
+}
+
+/* Search Container */
+.search-container {
+  margin-right: 20px; /* Space between search and filter */
+}
+
+#search-box {
+  padding: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+/* Filter Dropdown */
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-btn {
+  background-color: navy;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.filter-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.filter-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.filter-dropdown:hover .filter-content {
+  display: block;
+}
+
+/* Container for product items */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+}
+
+.c {
+  border: 0px solid black;
+  width: 200px;
+  padding: 30px;
+  margin: 80px;
+  background-color: rgb(255, 255, 255);
+}
+
+.c img {
+  width: 140px;
+  min-height: min-content;
+  align-items: center;
+}
+
+.c h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  padding-bottom: 5px;
+  padding-top: 0%;
+  text-align: center;
+}
+
+.c p {
+  padding-top: 5px;
+}

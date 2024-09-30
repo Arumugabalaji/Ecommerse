@@ -1,0 +1,127 @@
+<hmtl><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rough.css">
+</head>
+<body>
+    <div class="nav">
+        <list>
+            <a target="_blank" href="nill">Cloths</a>
+            <a target="_blank" href="nill">Dress</a>
+            <a target="_blank" href="nill">Tv</a>
+            <a target="_blank" href="nill">HomeAccesories</a>
+            <a target="_blank" href="nill">Furnitures</a>
+            <a target="_blank" href="nill">GRocesry</a>
+            <a target="_blank" href="nill">CleaningItems</a>
+            <a target="_blank" href="nill">Safteykids</a>
+            <a target="_blank" href="nill">Tables</a>
+            <a target="_blank" href="nill">Bikes</a>
+            <a target="_blank" href="nill">Frames</a>
+            <a target="_blank" href="nill">Stickers</a>
+            <a target="_blank" href="nill">Deddys</a>
+
+        </list>
+     </div>
+     <div class="search-filter-container">
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="Search...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+        <div class="filter-dropdown">
+            <button class="filter-btn">Filter by Category</button>
+            <div class="filter-content">
+                <a href="Mens.html">Mens</a>
+                <a href="Womens.html">Womens</a>
+                <a href="Kids.html">Kids</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="c">
+        <h1>Mens Kurta</h1>
+        <img src="arun-prakash-pbzNZOWaS50-unsplash.jpg" >
+        <p>Price:$2999</p>
+        <p>Wedding special</p>
+    </div>
+    <div class="c">
+
+        <h1>Mens T-shirts</h1>
+        <img src="joel-muniz-yGrMHa9gxIo-unsplash.jpg" >
+        <p>Price:$299</p>
+        <p>Vendor:Myntra</p>
+    </div>
+    <div class="c">
+
+        <h1>Shirt</h1>
+        <img src="mohamad-khosravi-vS0Kya7E5V4-unsplash.jpg" >
+        <p>Price:$400</p>
+        <p>Wedding special</p>
+        <p>Vendor:Manyvar</p>
+    </div>
+    <div class="c">
+
+        <h1>womens kurti</h1>
+        <img src="simeon-asenov-Y25QyJkkYfI-unsplash.jpg" >
+        <p>Price:$2999</p>
+        <p>Wedding special</p>
+        <p>vendor:MAhu</p>
+    </div>
+    <div class="c">
+
+        <h1>womens saree</h1>
+        <img src="rhamely-fFTlglaIkW8-unsplash.jpg" >
+        <p>Price:$2999</p>
+        <p>Wedding special</p>
+        <p>vendor:Babu</p>
+    </div>
+    <div class="c">
+
+        <h1>womens saree</h1>
+        <img src="declan-sun-LyUKn5wr0RE-unsplash.jpg" >
+        <p>Price:$2999</p>
+        <p>Wedding special</p>
+        <p>vendor:Babu</p>
+    </div>
+    <div class="c">
+
+        <h1>womens koi</h1>
+        <img src="declan-sun-LyUKn5wr0RE-unsplash.jpg" >
+        <p>Price:$2999</p>
+        <p>Wedding special</p>
+        <p>vendor:Babu</p>
+    </div>
+    <div class="c">
+
+        <h1>womens LAt</h1>
+        <img src="arun-prakash-pbzNZOWaS50-unsplash.jpg" >
+        <p>Price:$2999</p>
+        <p>Wedding special</p>
+        <p>vendor:Babu</p>
+    </div>
+
+    </div>
+    <script>
+        // Search Function
+        function performSearch() {
+            const query = document.getElementById("search-box").value.toLowerCase();
+            
+            // Redirect based on category search
+            if (query === "mens" || query === "men" || query === "Mensdress" || query === "Mens" || query === "Men") {
+                window.location.href = "Mens.html"; // Replace with actual URL
+            } else if (query === "womens" || query === "women" || query === "Womens" || query === "Women") {
+                window.location.href = "Womens.html"; // Replace with actual URL
+            } else if (query === "kids") {
+                window.location.href = "Kids.html"; // Replace with actual URL
+            } else {
+                alert("No matching category found.");
+            }
+        }
+    </script>
+
+
+</body>
+</html>
